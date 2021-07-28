@@ -15,8 +15,8 @@ jobs:
     runs-on: macos-latest
     steps:
     - run: date
-  depends: macos-latest
+  depends:
     needs: [ubuntu, windows, macos]
-    runs-on: 
+    runs-on: macos-latest
     steps:
     - run: date
